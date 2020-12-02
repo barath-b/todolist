@@ -1,0 +1,236 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #272727;
+}
+
+.cont {
+    width: 700px;
+    background-color: #F7FBFE;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 0px black;
+    padding-bottom: 50px;
+}
+
+.header {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 50px;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background: rgb(60, 138, 245);
+    background: linear-gradient(45deg, rgba(60, 138, 245, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.add {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    padding: 40px;
+    padding-bottom: 10px;
+}
+
+.create {
+    padding: 10px 40px 30px;
+}
+
+.notask {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: #b7b7b7;
+    padding: 50px 0px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.input {
+    width: 80%;
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: none;
+    border-bottom: 1px solid #bdbdbd;
+    color: #bdbdbd;
+    height: 100%;
+    width: 100%;
+    background-color: #F7FBFE;
+    outline: none;
+    transition: all .3s ease-in;
+}
+
+input[type="text"]:focus {
+    border-bottom: 1px solid #22b6ff;
+    color: #272727;
+}
+
+.btn {
+    width: 20%;
+    padding-left: 10px;
+}
+
+input[type="button"] {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #22b6ff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 8px #d4d4d4;
+    transition: all .1s ease-in;
+}
+
+input[type="button"]:hover {
+    box-shadow: 1px 1px 8px #a2a2a2;
+}
+
+.todo,
+.completed,
+.deleted {
+    padding: 30px 40px 0px;
+}
+
+.cont div h3 {
+    font-size: 20px;
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+}
+
+.todo h3 {
+    border-bottom: 2px solid #03BE3F;
+}
+
+.completed h3 {
+    border-bottom: 2px solid #22b6ff;
+}
+
+.deleted h3 {
+    border-bottom: 2px solid #ff4d4d;
+}
+
+.flex,
+.task,
+.task>div {
+    display: flex;
+    align-self: center;
+}
+
+.task {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px #e0e0e0;
+    padding: 20px;
+    margin: 20px 0px 0px;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.content p {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px 10px;
+    flex-grow: 1;
+    font-size: 17px;
+    line-height: 25px;
+}
+
+.content input[type="text"] {
+    background-color: #fff;
+}
+
+.content input[type="button"] {
+    width: 15%;
+    margin-left: 10px;
+}
+
+.delete input {
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    background-color: #fff;
+}
+
+.delete input:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+}
+
+.restore {
+    padding: 0px 10px;
+}
+
+.deleted .input:hover {
+    cursor: not-allowed;
+}
+
+.restore input {
+    border: 1px solid #22b6ff;
+    color: #22b6ff;
+    background-color: #fff;
+}
+
+.restore input:hover {
+    background-color: #22b6ff;
+    color: #fff;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    margin-top: 3px;
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px #d6d6d6;
+    transition: all .2s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #22b6ff;
+}
+
+input[type="checkbox"]:before,
+input[type="checkbox"]:checked:before {
+    position: absolute;
+    top: 1px;
+    left: -1px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+input[type="checkbox"]:checked:before {
+    content: '✓';
+}
+
+input[type="checkbox"]:hover {
+    box-shadow: 0px 0px 2px #949494;
+}
+
+input[type="checkbox"]:checked:hover {
+    box-shadow: 0px 0px 2px #646464;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
